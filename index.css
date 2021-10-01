@@ -4,6 +4,7 @@
     /* border:1px solid #000; feel free to remove or hide this rule */
     display:inline-block; /* this makes block level elements act like letters (so they sit next to eachother) */
     position:relative; /*IMPORTANT: any element with position:absolute inside this container will now be relative to bounds of this element;*/
+    /* background: yellow; */
 }
 
 .letter-a{
@@ -201,16 +202,17 @@
     border-top: 5px solid black;
     border-left: 5px solid black;
     border-bottom: 5px solid black;
+    border-right: 5px solid transparent;
     border-radius: 100%;
 }
-.c-block{
+/* .c-block{
     position: absolute;
     top: 20px;
     left: 180px;
     width: 50px;
     height: 235px;
     background: white;
-}
+} */
 
 .letter-d{
     display: inline-block;
