@@ -1,0 +1,68 @@
+body{
+    background: black;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0px;
+    margin-bottom: 5%;
+
+}
+#wrapper{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#title{
+    position: relative;
+    top: -40px;
+    transform: scale(0.8);
+}
+
+.s-black{
+    right: 30px;
+}
+
+.t-black .a-black .r-black{
+    left: 20px;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    color: rgba(255, 255, 255, 0.205);
+    padding: 1em;
+
+}
+
+#container{
+    display: flex;
+    position: relative;
+    top: -50px;
+    width: 100%;
+    height: 700px;
+    border: 1px solid rgb(145, 138, 138);
+    justify-content: space-evenly;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.col-1{
+    display: inline-block;
+}
+
+#make-a-wish{
+    display: flex;
+    justify-content: space-around;
+    margin-left:-200px ;
+    margin-right:-200px ;
+    position: relative;
+    top: -550px;
+    z-index: -1;
+    transform: scale(0.4);
+}
+
+#name{
+    transform: scale(0.2);
+}
