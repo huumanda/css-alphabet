@@ -4,10 +4,11 @@ body{
     margin-right: 5%;
     margin-top: 0px;
     margin-bottom: 5%;
-
+    
 }
 #wrapper{
     display: flex;
+    position: relative;
     align-items: baseline;
     flex-wrap: wrap;
     flex-direction: row;
@@ -15,9 +16,16 @@ body{
 }
 
 #title{
-    position: relative;
-    top: -40px;
-    transform: scale(0.8);
+    position:relative;
+    /* top: -40px; */
+    transform: scale(0.5);
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 500px;
+
 }
 
 .s-black{
@@ -30,8 +38,32 @@ body{
 
 p{
     font-family: 'Raleway', sans-serif;
-    color: rgba(255, 255, 255, 0.205);
+    color: rgba(255, 255, 255, 0.199);
     padding: 1em;
+    font-size: 18px;
+}
+.col-1 p:hover, .col-1 a:hover{
+    color: rgb(238, 132, 238);
+}
+
+.col-2 p:hover, .col-2 a:hover{
+    color: rgb(132, 217, 238);
+}
+
+.col-3 p:hover, .col-3 a:hover{
+    color: rgb(227, 238, 132);
+}
+.col-1-1 p:hover, .col-1-1 a:hover{
+    color: rgb(132, 238, 132);
+}
+
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    color: rgba(255, 255, 255, 0.295);
+    font-size: 18px;
+    padding-left: 1em;
+    padding-top: 1em;
 
 }
 
@@ -39,10 +71,10 @@ p{
     display: flex;
     position: relative;
     top: -50px;
-    width: 100%;
+    width: 85%;
     height: 700px;
     border: 1px solid rgb(145, 138, 138);
-    justify-content: space-evenly;
+    justify-content: space-between;
     overflow: hidden;
     overflow-y: scroll;
 
@@ -65,4 +97,32 @@ p{
 
 #name{
     transform: scale(0.2);
+}
+
+a, a:visited{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.295);
+}
+
+#get-inspired{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    transform: scale(0.7);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#get{
+    position: relative;
+    left: -50px;
+}
+#inspired .letter-i{
+    position: relative;
+    left: -10px;
+}
+#inspired .letter-s ,#inspired .letter-p{
+    position: relative;
+    left: 12px;
 }
